@@ -1,0 +1,142 @@
+.App {
+  display: grid;
+  height: 90vh;
+  grid-template-rows: 15fr 85fr;
+  background-color: #FFFFFF;
+  /* background-color: #CCE5FF; */
+}
+
+.Head {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* background-color: red; */
+}
+
+.Head_left {
+  /* background-color: yellow; */
+  padding: 1rem;
+  padding-left: 5rem;
+  font-size: 18px;
+}
+
+.Head_right {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: right; /* Căn giữa ngang */
+  align-items: center; /*Căn giữa dọc*/
+  padding: 1rem;
+  padding-right: 5rem;
+}
+
+.Head_center {
+  font-size: 26px;
+  /* background-color: orange; */
+  display: flex;
+  justify-content: center; /* Căn giữa ngang */
+  align-items: center; /* Căn giữa dọc */
+}
+
+.logo_container {
+  text-align: center; /* Căn giữa hình ảnh */
+}
+
+.logo_container img {
+  width: 120px; /* Thiết lập kích thước ảnh */
+  height: auto; /* Tự động tính toán chiều cao */
+}
+/* ================================================= */
+
+.Body {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  /* background-color: green; */
+}
+
+.Body_left {
+  /* background-color: greenyellow; */
+}
+
+.Body_center {
+  /* background-color: grey; */
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center; /* Căn giữa ngang */
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.Body_right {
+  /* background-color: goldenrod; */
+}
+
+.Header {
+  font-size: 18px;
+  display: flex;
+  justify-content: center; /* Căn giữa ngang */
+  align-items: center; /* Căn giữa dọc */
+}
+
+.Image_container {
+  padding: 10px;
+  padding-top: 0px;
+  display: flex;
+  justify-content: center; /* Căn giữa ngang */
+  align-items: center; /* Căn giữa dọc */
+}
+
+.Image_box {
+  border: 2px solid #000;
+  height: 55vh;
+  width: 55vh;
+}
+
+.Image_box img {
+  height: 55vh;
+  width: 55vh;
+}
+
+/* .custom-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 60px;
+  width: 180px;
+  font-size:20px;
+} */
+
+.custom-button {
+  background-color: #3498db;
+  color: #fff;
+  /* padding: 10px 20px; */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 50px;
+  width: 150px;
+  font-size:16px;
+}
+
+.custom-button.disabled {
+  background-color: gray;
+  color: #fff;
+  /* padding: 10px 20px; */
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 150px;
+  font-size:16px;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.custom-button:hover {
+  background-color: #2980b9;
+}
+
+.custom-button:active {
+  background-color: #1f618d;
+  transform: translateY(2px);
+}
